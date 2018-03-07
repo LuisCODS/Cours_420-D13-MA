@@ -1,25 +1,24 @@
 package lecteurFlash;
 
-/**
- *patron template method
- */
 public abstract class LecteurMedia {
 	
-	//FAIT DES APPELS
+	//APPEL
 	public void lire()
 	{
-		affichageMessage();
 		choisirLecteurMedia();
-		lecteur();		
-	}	
-	//IMPLEMENTÉ ICI: actions en commun
+		lecteur();
+		affichageMessage();
+	}
+	
+	//Tout ce qui est commun doivent être implementés ici(dans la mère).
 	void affichageMessage()
 	{
-		System.out.println("Welcome to template media ");	
-	}		
+		System.out.println("welcome to template media ");	
+	}	
 	
-	//IMPLEMENTÉ AILLEURS : actions spécifiques
+	//Ce qui est especifique, on l'implement dans les filles.
 	public abstract void choisirLecteurMedia();
  	public abstract void lecteur();
+
 	
 }//fin
