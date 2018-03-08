@@ -1,3 +1,4 @@
+package parking;
 
 public class Enseigne implements IObservateur {
 

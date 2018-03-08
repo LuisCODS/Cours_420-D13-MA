@@ -1,3 +1,4 @@
+package parking;
 
 public class Porte implements IObservateur {
 	
@@ -5,7 +6,8 @@ public class Porte implements IObservateur {
 	
 	@Override
 	public void UpDateMe() {
-		setOpen(true);
+		//Close door
+		setOpen(false);
 		System.out.println("PORTE : Fermerture authomatique...");
 	}
 

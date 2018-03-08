@@ -1,3 +1,4 @@
+package parking;
 
 public class AgentDeSecurite implements IObservateur {
 

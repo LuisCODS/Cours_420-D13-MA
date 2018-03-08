@@ -1,3 +1,4 @@
+package parking;
 
 public class Test {
 
@@ -13,12 +14,12 @@ public class Test {
 		parking.Subscribe(enseigne);
 		parking.Subscribe(agent);
 		
-/*		System.out.println("TEST HORS LIMITE" +"\n");
+		System.out.println("TEST HORS LIMITE" +"\n");
 		parking.setNbVoitureIN(101);
-		System.out.println("\n");*/
+		System.out.println("\n");
 		
 		System.out.println("TEST DANS LA LIMITE" +"\n");
-		parking.setNbVoitureIN(80);
+		parking.setNbVoitureIN(100);
 
 	}
 

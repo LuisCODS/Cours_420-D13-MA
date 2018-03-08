@@ -319,7 +319,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+notify(o: IObservateur)",
+											"text": "+notify()",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -4141,26 +4141,6 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"parameters": [
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFh4qvqAYUP8QI=",
-									"_parent": {
-										"$ref": "AAAAAAFh2Mv8c0njFE8="
-									},
-									"name": "o",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFh2MttrEmuLXg="
-									},
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								}
-							],
 							"concurrency": "sequential",
 							"isQuery": false,
 							"isAbstract": true

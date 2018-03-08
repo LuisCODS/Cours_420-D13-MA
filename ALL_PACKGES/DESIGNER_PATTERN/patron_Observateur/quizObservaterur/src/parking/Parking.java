@@ -1,3 +1,4 @@
+package parking;
 import java.util.ArrayList;
 
 
@@ -24,19 +25,19 @@ public class Parking implements IObservable{
 		for (IObservateur iObservateur : observers) {
 			iObservateur.UpDateMe();	
 		}			
-	}
-	
+	}	
 
 	public int getNbVoitureIN() {
-		return (nbVoitureIN - this.PLACES_DISPONNIBLES);
+		return this.nbVoitureIN-this.PLACES_DISPONNIBLES ;
 	}
 	public void setNbVoitureIN(int nbVoitureIN) 
 	{
 		// ENCORE DE LA PLACE
-		if (nbVoitureIN <= this.PLACES_DISPONNIBLES) {
+		if (nbVoitureIN <= this.PLACES_DISPONNIBLES) 
+		{
 			this.nbVoitureIN = nbVoitureIN;
-			System.out.println("PLaces disponnibles : "+getNbVoitureIN()+"\n");
-		}
+			System.out.println("Places disponibles :"+ this.getNbVoitureIN());
+			}
 		else
 		{
 			// CAPACITE MAX
