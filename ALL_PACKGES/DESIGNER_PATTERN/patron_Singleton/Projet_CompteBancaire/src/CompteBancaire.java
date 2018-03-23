@@ -1,3 +1,4 @@
+package Projet_CompteBancaire.src;
 import java.util.ArrayList;
 
 public class CompteBancaire implements IObservable {
@@ -5,6 +6,24 @@ public class CompteBancaire implements IObservable {
 	double Sold;
 	int numero;	
 	ArrayList<IObservateur> observables = new ArrayList<IObservateur>();
+	
+	
+	public void Deposer(Double montant)
+	{
+		if (this.Sold >= montant) {
+			
+		}
+	}
+	
+	public void Retirer(Double montant)
+	{
+		if (this.Sold >= montant) {
+			this.Sold = this.Sold - montant;
+		}
+		else
+			System.out.println("Solde insufisant");
+
+	}
 	
 	@Override
 	public void Add(IObservateur o)

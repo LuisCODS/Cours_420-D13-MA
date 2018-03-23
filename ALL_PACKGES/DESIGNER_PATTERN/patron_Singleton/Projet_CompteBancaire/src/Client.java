@@ -1,3 +1,5 @@
+package Projet_CompteBancaire.src;
+
 
 public class Client implements IObservateur {
 

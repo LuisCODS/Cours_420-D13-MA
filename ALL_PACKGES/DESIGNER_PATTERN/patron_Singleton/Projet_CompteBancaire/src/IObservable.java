@@ -1,3 +1,4 @@
+package Projet_CompteBancaire.src;
 public interface IObservable {
 	
 	public void Add(IObservateur o);

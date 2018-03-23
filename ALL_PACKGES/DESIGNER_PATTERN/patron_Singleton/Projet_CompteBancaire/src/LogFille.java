@@ -1,8 +1,8 @@
-
+package Projet_CompteBancaire.src;
 public class LogFille implements IObservateur{
 	
 	private static LogFille instance = null;
-	//CompteBancaire compte = null;
+	CompteBancaire compte = null;
 
 	private LogFille() {    }
 	
