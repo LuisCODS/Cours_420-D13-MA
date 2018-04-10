@@ -3,22 +3,20 @@ package compteBancaire;
 import java.util.ArrayList;
 
 public class CompteBancaire implements Isubject{
-	StateCompte state;
 	
-	public StateCompte getState() {
-		return state;
-	}
-
-	public void setState(StateCompte state) {
-		this.state = state;
-	}
-
+	StateCompte state;
 	private int numero;// Numéro du compte.
     private double solde;// Argent disponible sur le compte.
     ArrayList<Iobserver> allObservers;
     String message;
-    
-    
+	
+	public StateCompte getState() {
+		return state;
+	}
+	
+	public void setState(StateCompte state) {
+		this.state = state;
+	}  
     
     public double getSolde() {
 		return solde;
