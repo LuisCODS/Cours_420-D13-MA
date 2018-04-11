@@ -1,7 +1,7 @@
 package vihicule;
 
-public class factoryscooterelectric extends Factoryscooter{
-	factoryscooterelectric(){}
+public class FactoryScooterElectric extends Factoryscooter{
+	FactoryScooterElectric(){}
 
 	protected Vehicule factorymethod() {
 		System.out.println("scooter electric");

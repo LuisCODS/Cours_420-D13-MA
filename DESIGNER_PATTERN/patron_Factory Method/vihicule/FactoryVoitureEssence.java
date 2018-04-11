@@ -1,8 +1,8 @@
 package vihicule;
 
-public class factoryvoitureessence extends factoryvoiture {
+public class FactoryVoitureEssence extends factoryvoiture {
 
-	factoryvoitureessence(){}
+	FactoryVoitureEssence(){}
 	protected Vehicule factorymethod() {
 		System.out.println("voiture essence");
 		return new VoitureEssence();
